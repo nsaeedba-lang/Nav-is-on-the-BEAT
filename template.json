@@ -1,0 +1,15 @@
+{
+  "slug": "agency",
+  "name": "Wildcard — creative agency website",
+  "category": "business",
+  "description": "A bold, big-type website for a creative agency or design studio: home, case-studies page with filters and a contact page with a project enquiry form.",
+  "tags": ["agency", "studio", "creative", "portfolio", "design agency", "bold typography"],
+  "pages": ["index.html", "work.html", "contact.html"],
+  "features": ["Responsive", "3 pages", "Big typography", "Scrolling marquee", "Services accordion", "Filterable case studies", "Illustrated team avatars", "Project enquiry form with validation", "Live studio clocks", "Full-screen mobile menu", "Reduced-motion support", "No framework"],
+  "fonts": [
+    { "family": "Syne", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Inter", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#ff4d2e", "accent": "#c9f06b", "bg": "#f2efe8", "text": "#111111" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

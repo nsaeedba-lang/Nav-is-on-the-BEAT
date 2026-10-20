@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Navid, Brand &amp; Visual Designer</title>
+  <meta name="description" content="Get in touch with Navid about brand identity, visual design, or an upcoming project.">
+  <meta property="og:title" content="Contact — Navid, Brand &amp; Visual Designer">
+  <meta property="og:description" content="Contact independent brand and visual designer Navid to discuss a project.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Ccircle cx='17' cy='17' r='17' fill='%23111'/%3E%3Cpath d='M17 5l3 9 9 3-9 3-3 9-3-9-9-3 9-3z' fill='%23ff4d2e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="logo" href="index.html" aria-label="Navid portfolio home"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" style="fill:var(--ink)"/><path d="M17 5l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" style="fill:var(--brand)"/></svg><span data-zt="brandName">Navid</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><i aria-hidden="true"></i><span>Menu</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#team">About</a></li>
+        <li class="nav-cta"><a href="contact.html" aria-current="page">Start a project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container" aria-labelledby="page-title">
+      <span class="label">Contact</span>
+      <h1 id="page-title" data-zt="heading">Have a project? <em style="font-style:normal;color:var(--brand)">Let’s talk.</em></h1>
+      <p>Tell me what you’re working on and what you need. For a direct conversation, email n.saeed.ba@gmail.com.</p>
+    </section>
+
+    <section class="container" style="padding-bottom:clamp(80px,10vw,140px)" aria-label="Project enquiry">
+      <div class="contact-grid">
+        <!-- Wire this form: set action to your Formspree endpoint (https://formspree.io/f/xxxx)
+             or add name="contact" data-netlify="true" when deploying on Netlify, then remove data-demo-contact. -->
+        <form class="form" action="#" method="post" data-demo-contact novalidate>
+          <div class="two">
+            <div class="field"><label for="c-name">Your name *</label><input id="c-name" name="name" autocomplete="name" placeholder="Jane Doe" required><span class="error" aria-live="polite"></span></div>
+            <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required><span class="error" aria-live="polite"></span></div>
+          </div>
+          <div class="field"><label for="c-company">Company</label><input id="c-company" name="company" autocomplete="organization" placeholder="Company name"></div>
+          <fieldset class="field"><legend>What would you like help with?</legend><div class="chips"><label><input type="checkbox" name="services" value="Brand strategy"><span>Brand strategy</span></label><label><input type="checkbox" name="services" value="Visual identity"><span>Visual identity</span></label><label><input type="checkbox" name="services" value="Website"><span>Website</span></label><label><input type="checkbox" name="services" value="App / product"><span>App / product</span></label><label><input type="checkbox" name="services" value="Campaign"><span>Campaign</span></label><label><input type="checkbox" name="services" value="Not sure yet"><span>Not sure yet</span></label></div></fieldset>
+          <fieldset class="field"><legend>Budget</legend><div class="chips"><label><input type="radio" name="budget" value="Under £15k" required><span>Under £15k</span></label><label><input type="radio" name="budget" value="£15–40k"><span>£15–40k</span></label><label><input type="radio" name="budget" value="£40–100k"><span>£40–100k</span></label><label><input type="radio" name="budget" value="£100k+"><span>£100k+</span></label></div></fieldset>
+          <div class="field"><label for="c-msg">Tell me about the project *</label><textarea id="c-msg" name="message" placeholder="Goals, timelines, links, anything that helps." required></textarea><span class="error" aria-live="polite"></span></div>
+          <div><button class="btn btn-dark" type="submit">Send enquiry <span class="arrow">&nearr;</span></button></div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-aside">
+          <div class="aside-card">
+            <h2>Project enquiries</h2>
+            <p>Talk directly with Navid, an independent brand and visual designer.</p>
+            <a class="big-link" href="mailto:n.saeed.ba@gmail.com">n.saeed.ba@gmail.com</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Independent design.<br>Distinctive by nature.</h2>
+          <!-- Wire this form: point action at Formspree (https://formspree.io/f/xxxx) or add data-netlify="true" on Netlify. -->
+          <form class="newsletter" action="#" method="post" data-demo-form novalidate>
+            <label class="visually-hidden" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+            <button type="submit">Subscribe &rarr;</button>
+          </form>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </div>
+        <div>
+          <h3>Portfolio</h3>
+          <ul><li><a href="work.html">Work</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#team">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul><li><a href="#main">Instagram</a></li><li><a href="#main">LinkedIn</a></li><li><a href="#main">Behance</a></li><li><a href="#main">Dribbble</a></li></ul>
+        </div>
+        <div>
+          <h3>Say hello</h3>
+          <address>n.saeed.ba@gmail.com</address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> <span data-zt="brandName">Navid</span> · Portfolio</span>
+        <nav aria-label="Legal"><a href="#main">Privacy</a><a href="#main">Cookies</a><a href="#main">Imprint</a></nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
