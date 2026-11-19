@@ -1,150 +1,190 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Navid — Brand &amp; Visual Designer</title>
-  <meta name="description" content="Navid is an independent brand and visual designer creating bold identities and visual worlds. Explore work for San Marco, YAL Café, and Davoodi Jewelry.">
-  <meta property="og:title" content="Navid — Brand &amp; Visual Designer">
-  <meta property="og:description" content="Independent brand and visual design by Navid. Explore work for San Marco, YAL Café, and Davoodi Jewelry.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-image.svg">
-  <meta name="theme-color" content="#111111">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Ccircle cx='17' cy='17' r='17' fill='%23111'/%3E%3Cpath d='M17 5l3 9 9 3-9 3-3 9-3-9-9-3 9-3z' fill='%23ff4d2e'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#17191c">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Navid Saeed – Graphic Designer, Brand Identity &amp; Art Direction</title>
+<meta name="description" content="Navid Saeed is a graphic designer focused on brand identity, art direction, and digital experiences. Recent work: SanMarco gelato, Yal Café, and Stancer Testing Lab.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+/* Works: "more coming" note (self-contained, safe to move into styles.css) */
+.works-note{margin:.25rem 0 0;max-width:46ch;font-family:"Instrument Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;color:rgba(255,255,255,.64)}
+.works-more{display:flex;align-items:center;justify-content:space-between;gap:1.5rem 2.5rem;flex-wrap:wrap;margin-top:clamp(1.5rem,3vw,2.5rem);padding:clamp(1.5rem,3vw,2.25rem) clamp(1.25rem,3.5vw,2.5rem);border:1.5px dashed rgba(255,255,255,.22);border-radius:22px}
+.works-more-copy{max-width:52ch}
+.works-more h3{display:flex;align-items:center;gap:.7rem;margin:0 0 .5rem;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:clamp(1.25rem,2.2vw,1.625rem);line-height:1.15;letter-spacing:-.01em}
+.works-more h3 i{flex:none;width:.6rem;height:.6rem;border-radius:50%;background:currentColor;opacity:.9}
+.works-more p{margin:0;font-family:"Instrument Sans",system-ui,sans-serif;font-size:1rem;line-height:1.6;color:rgba(255,255,255,.64)}
+.works-more .btn{flex:none}
+@media (prefers-reduced-motion:no-preference){
+  .works-more h3 i{animation:wm-pulse 2.4s ease-in-out infinite}
+  @keyframes wm-pulse{0%,100%{opacity:.95;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
+}
+@media (max-width:640px){.works-more .btn{width:100%;text-align:center}}
+/* Goodbye card */
+.bye{margin-top:clamp(3rem,7vw,5.5rem);padding:clamp(2rem,5vw,3.5rem) clamp(1.25rem,4vw,3rem);display:flex;flex-direction:column;align-items:center;text-align:center;gap:.75rem;border:1px solid rgba(255,255,255,.12);border-radius:28px;background:rgba(255,255,255,.035)}
+.bye-wave{display:inline-block;font-size:clamp(2.5rem,6vw,3.5rem);line-height:1;transform-origin:70% 75%;user-select:none}
+.bye h3{margin:.25rem 0 0;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(1.5rem,3.4vw,2.25rem);line-height:1.1;letter-spacing:-.015em}
+.bye p{margin:0 0 .75rem;max-width:40ch;font-family:"Instrument Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:rgba(255,255,255,.64)}
+@media (prefers-reduced-motion:no-preference){
+  .bye:hover .bye-wave,.bye:focus-within .bye-wave{animation:bye-wave 1.4s ease-in-out 2}
+  @keyframes bye-wave{0%,60%,100%{transform:rotate(0)}10%,30%,50%{transform:rotate(16deg)}20%,40%{transform:rotate(-8deg)}}
+}
+</style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="container nav" aria-label="Primary">
-      <a class="logo" href="index.html" aria-label="Navid portfolio home"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" style="fill:var(--ink)"/><path d="M17 5l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" style="fill:var(--brand)"/></svg><span data-zt="brandName">Navid</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><i aria-hidden="true"></i><span>Menu</span></button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#team">About</a></li>
-        <li class="nav-cta"><a href="contact.html">Start a project</a></li>
-      </ul>
-    </nav>
-  </header>
+<nav>
+  <a class="logo" href="#top">Navid Saeed</a>
+  <div class="dock">
+    <div class="dock-track" aria-hidden="true"><i></i></div>
+    <ul>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <main id="main">
-    <section class="hero container" aria-labelledby="hero-title">
-      <span class="label">Navid · Brand &amp; Visual Designer</span>
-      <h1 id="hero-title" data-zt="heading"><span class="line"><span>I build bold</span></span><span class="line"><span>visual worlds <span class="pill-word" aria-hidden="true"><svg viewBox="0 0 160 70" preserveAspectRatio="xMidYMid slice"><rect width="160" height="70" fill="#7b61ff"/><circle cx="40" cy="60" r="40" fill="#ff4d2e"/><circle cx="120" cy="10" r="30" fill="#c9f06b"/></svg></span> for</span></span><span class="line"><span><em>distinctive brands.</em></span></span></h1>
-      <div class="hero-foot">
-        <p>I shape identities and visual systems with a bold point of view, from first idea to every detail people see.</p>
-        <a class="badge" href="contact.html" aria-label="Start a project with Navid">
-          <svg class="ring" viewBox="0 0 150 150" aria-hidden="true"><defs><path id="circ" d="M75 75m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/></defs><text font-size="13.2" font-weight="600" letter-spacing="3.2" fill="currentColor"><textPath href="#circ">START A PROJECT · START A PROJECT · </textPath></text></svg>
-          <span class="dot" aria-hidden="true">&nearr;</span>
-        </a>
+<header class="hero" id="top">
+  <div class="aurora" aria-hidden="true"><i></i><i></i></div>
+  <div class="nameclip"><h1 class="name" aria-label="Navid Saeed"><span aria-hidden="true" style="--i:0">N</span><span aria-hidden="true" style="--i:1">a</span><span aria-hidden="true" style="--i:2">v</span><span aria-hidden="true" style="--i:3">i</span><span aria-hidden="true" style="--i:4">d</span> <span aria-hidden="true" style="--i:6">S</span><span aria-hidden="true" style="--i:7">a</span><span aria-hidden="true" style="--i:8">e</span><span aria-hidden="true" style="--i:9">e</span><span aria-hidden="true" style="--i:10">d</span></h1></div>
+  <div class="hero-row">
+    <div class="hero-copy"><p class="tagline" data-type><span class="t">Make meaning. Visible.</span><span class="r" aria-hidden="true"></span></p><p class="role fx" style="--d:1900ms"><b>Graphic Designer, Brand Identity &amp; Art Direction</b></p><p class="bio split words" style="--d0:2200ms">I design brand identities and digital experiences, grounded in research and an art background. Recent work includes SanMarco gelato, Yal Café, and Stancer Testing Lab, from logos and guidelines to packaging and social campaigns.</p><a class="btn hero-cta fx" href="#works" style="--d:2700ms">View work</a><p class="cycle fx" style="--d:3000ms"><span class="cycle-label">Focus</span><span class="cycle-word" data-words="Brand identity|Art direction|Digital experiences">Brand identity · Art direction · Digital experiences</span></p></div>
+    <div class="ph portrait"><img src="assets/images/navid-saeed.webp" alt="Portrait of Navid Saeed" width="1672" height="941" decoding="async"></div>
+  </div>
+</header>
+
+<section id="works">
+  <h2 class="reveal">Works</h2>
+  <div class="grid">
+    <a class="card sanmarco" href="#sanmarco-view" aria-label="View SanMarco Italian gelato image"><div class="frame"><div class="ph"><img src="assets/projects/sanmarco/cover.jpg" alt="SanMarco Italian gelato brand identity redesign, 2025" width="1920" height="1080" loading="lazy" decoding="async"></div></div><span class="cursor">Case study <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 17.5 17 7M8.5 6.5H17.5V15.5"/></svg></span><h3>SanMarco Italian gelato <i aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17.5 17 7M8.5 6.5H17.5V15.5"/></svg></i></h3><small>brand identity redesign, 2025</small></a>
+    <a class="card yal-cafe" href="#yal-cafe-view" aria-haspopup="dialog" aria-label="View Yal Café case study"><div class="frame"><div class="ph"><img src="assets/projects/yal-cafe/cover.jpg" alt="Yal Café logo on the case study cover" width="1600" height="900" loading="lazy" decoding="async"></div></div><span class="cursor">Case study <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 17.5 17 7M8.5 6.5H17.5V15.5"/></svg></span><h3>Yal Café <i aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17.5 17 7M8.5 6.5H17.5V15.5"/></svg></i></h3><small>Visual identity design, 2024</small></a>
+    <a class="card stancer" href="#stancer-view" aria-haspopup="dialog" aria-label="View Stancer Testing Lab case study"><div class="stancer-frame"><img class="stancer-cover" src="assets/projects/stancer/cover.webp" alt="" width="596" height="842" loading="lazy" decoding="async"><span class="stancer-label">Case study</span><span class="cursor">Case study <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 17.5 17 7M8.5 6.5H17.5V15.5"/></svg></span></div><h3>Stancer Testing Lab <i aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17.5 17 7M8.5 6.5H17.5V15.5"/></svg></i></h3><small>Brand identity and guidelines, 2025</small></a>
+  </div>
+  <aside class="works-more reveal" aria-label="More work coming">
+    <div class="works-more-copy">
+      <h3><i aria-hidden="true"></i>More work is on the way</h3>
+      <p>This site is still growing, and more projects are on the way. Want to see more now? Get in touch.</p>
+    </div>
+    <a class="btn" href="#contact">Ask for more work</a>
+  </aside>
+</section>
+
+<section class="resume" id="resume">
+  <div class="resume-wrap">
+    <div class="sticky reveal">
+      <h2>Resume</h2>
+    </div>
+    <div>
+      <div class="group about reveal">
+        <h3>About</h3>
+        <p class="lead">My academic background in art taught me to look closely before I design. I start each brief with research, turn what I learn into ideas, and explore visual directions until one communicates clearly. Alongside my professional work, I keep developing my skills and my own perspective on design and art.</p>
       </div>
-    </section>
-
-
-    <section class="section container" style="padding-top:0" aria-labelledby="work-title">
-      <div class="section-top">
-        <div><span class="label">Selected work</span><h2 id="work-title" class="big">Selected projects</h2></div>
-        <a class="btn btn-dark" href="work.html">All projects <span class="arrow">&nearr;</span></a>
-      </div>
-      <div class="work-grid feature">
-        <a class="case reveal" href="work.html" data-cat="branding"><div class="case-media"><img src="assets/img/work-halcyon.svg" alt="San Marco project artwork" loading="lazy" width="800" height="600"><span class="view">View project <span class="arrow">&nearr;</span></span></div><div class="case-info"><h3>San Marco</h3><span>Brand identity, Visual design</span></div></a><a class="case reveal" href="work.html" data-cat="digital"><div class="case-media"><img src="assets/img/work-vessel.svg" alt="YAL Café project artwork" loading="lazy" width="800" height="600"><span class="view">View project <span class="arrow">&nearr;</span></span></div><div class="case-info"><h3>YAL Café</h3><span>Brand identity, Visual design</span></div></a><a class="case reveal" href="work.html" data-cat="campaign"><div class="case-media"><img src="assets/img/work-mirth.svg" alt="Davoodi Jewelry project artwork" loading="lazy" width="800" height="600"><span class="view">View project <span class="arrow">&nearr;</span></span></div><div class="case-info"><h3>Davoodi Jewelry</h3><span>Brand identity, Visual design</span></div></a>
-      </div>
-    </section>
-
-    <section class="section container" aria-labelledby="intro-title">
-      <div class="intro">
-        <div><span class="label">About me</span></div>
-        <div class="reveal">
-          <h2 id="intro-title">I’m Navid, a brand and visual designer drawn to ideas with character.</h2>
-          <p>I create distinctive identities and image-led visual worlds. My approach is experimental, thoughtful, and shaped around what makes each project its own.</p>
-          <a class="btn btn-line" href="#team">More about me <span class="arrow">&nearr;</span></a>
+      <div class="cols">
+        <div class="col group">
+          <h3>Experience</h3>
+          <div class="row reveal"><time>2025</time><div><h4>San Marco Gelato</h4><p>Brand identity redesign, social media design and campaigns.</p></div></div>
+          <div class="row reveal"><time>2025</time><div><h4>Stancer Testing Lab</h4><p>Canada</p></div></div>
+          <div class="row reveal"><time>2023</time><div><h4>Yal Cafe</h4></div></div>
+          <div class="row reveal"><time>2021</time><div><h4>Arad Cell Yazd</h4></div></div>
+        </div>
+        <div class="col group">
+          <h3>Education</h3>
+          <div class="row reveal"><time>2022 – Present</time><div><h4>BA in Painting</h4><p>Azad University, Tehran Central Branch</p></div></div>
+          <div class="row reveal"><time>2022 – 2023</time><div><h4>BSc in Biomedical Engineering</h4><p>Amirkabir University of Technology · Withdrew</p></div></div>
         </div>
       </div>
-    </section>
-
-    <section class="section dark" id="services" aria-labelledby="services-title">
-      <div class="container">
-        <div class="section-top">
-          <div><span class="label">What I do</span><h2 id="services-title" class="big">Services</h2></div>
-          <p class="muted" style="max-width:420px;margin:0">From identity to art direction, I build a visual language around the idea at the heart of each project.</p>
-        </div>
-        <div class="services">
-          <details class="service" open><summary><span class="num">01</span><h3>Brand strategy</h3><span class="plus" aria-hidden="true">+</span></summary>
-            <div class="service-body"><p>I uncover the idea at the heart of a brand and shape it into a clear, distinctive point of view.</p><ul><li>Research</li><li>Positioning</li><li>Naming</li><li>Tone of voice</li></ul></div></details>
-          <details class="service"><summary><span class="num">02</span><h3>Visual identity</h3><span class="plus" aria-hidden="true">+</span></summary>
-            <div class="service-body"><p>I create expressive identity systems, balancing distinctive marks, typography, colour, and image.</p><ul><li>Logo &amp; type</li><li>Colour</li><li>Guidelines</li><li>Packaging</li></ul></div></details>
-          <details class="service"><summary><span class="num">03</span><h3>Websites &amp; products</h3><span class="plus" aria-hidden="true">+</span></summary>
-            <div class="service-body"><p>I translate brand ideas into cohesive digital experiences and visual systems.</p><ul><li>UX/UI</li><li>Web development</li><li>Design systems</li><li>E-commerce</li></ul></div></details>
-          <details class="service"><summary><span class="num">04</span><h3>Campaigns &amp; motion</h3><span class="plus" aria-hidden="true">+</span></summary>
-            <div class="service-body"><p>I develop image-led concepts and art direction for campaigns with a memorable visual point of view.</p><ul><li>Concept</li><li>Art direction</li><li>Motion</li><li>Social</li></ul></div></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" aria-labelledby="process-title">
-      <div class="section-top"><div><span class="label">How I work</span><h2 id="process-title" class="big">Process</h2></div></div>
-      <ol class="process">
-        <li class="reveal"><span class="step">01</span><h3>Discover</h3><p>Workshops, interviews and a lot of listening. I leave with a clear brief and a shared direction.</p></li>
-        <li class="reveal"><span class="step">02</span><h3>Define</h3><p>Strategy and creative territories, tested early with real people so decisions are easy.</p></li>
-        <li class="reveal"><span class="step">03</span><h3>Design</h3><p>I craft the visual system, refine the details, and prototype until it feels right.</p></li>
-        <li class="reveal"><span class="step">04</span><h3>Deliver</h3><p>Launch, guidelines and training. I provide final files and guidance for a confident launch.</p></li>
-      </ol>
-    </section>
-
-    <section class="section container" id="team" style="padding-top:0" aria-labelledby="team-title">
-      <div class="section-top">
-        <div><span class="label">A little about me</span><h2 id="team-title" class="big">About</h2></div>
-        <p style="max-width:380px;margin:0;color:var(--muted)">Independent by choice, collaborative by nature. I bring curiosity and a distinct visual point of view to every project.</p>
-      </div>
-    </section>
-
-    <section class="section cta" aria-labelledby="cta-title">
-      <div class="container">
-        <span class="label">Have a project?</span>
-        <h2 id="cta-title"><a href="contact.html">Let’s talk</a></h2>
-        <p>Tell me what you’re building. I’d be glad to hear about it.</p>
-        <a class="btn btn-dark" href="contact.html">Start a project</a>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h2>Independent design.<br>Distinctive by nature.</h2>
-          <!-- Wire this form: point action at Formspree (https://formspree.io/f/xxxx) or add data-netlify="true" on Netlify. -->
-          <form class="newsletter" action="#" method="post" data-demo-form novalidate>
-            <label class="visually-hidden" for="nl-email">Email address</label>
-            <input id="nl-email" type="email" name="email" placeholder="Your email" autocomplete="email" required>
-            <button type="submit">Subscribe &rarr;</button>
-          </form>
-          <p class="form-msg" role="status" aria-live="polite"></p>
-        </div>
-        <div>
-          <h3>Portfolio</h3>
-          <ul><li><a href="work.html">Work</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#team">About</a></li><li><a href="contact.html">Contact</a></li></ul>
-        </div>
-        <div>
-          <h3>Follow</h3>
-          <ul><li><a href="#main">Instagram</a></li><li><a href="#main">LinkedIn</a></li><li><a href="#main">Behance</a></li><li><a href="#main">Dribbble</a></li></ul>
-        </div>
-        <div>
-          <h3>Say hello</h3>
-          <address>n.saeed.ba@gmail.com</address>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>&copy; <span data-year>2026</span> <span data-zt="brandName">Navid</span> · Portfolio</span>
-        <nav aria-label="Legal"><a href="#main">Privacy</a><a href="#main">Cookies</a><a href="#main">Imprint</a></nav>
+      <div class="cols3">
+        <div class="group"><h3>Skills</h3><div class="chips reveal"><span>Design Thinking</span><span>Research Methods</span><span>Prompt Engineering</span><span>AI-Powered Content Creation</span><span>Marketing &amp; Advertising</span><span>Social Media</span></div></div>
+        <div class="group"><h3>Software</h3><div class="chips reveal"><span>Adobe Illustrator</span><span>Photoshop</span><span>Premiere Pro</span><span>InDesign</span><span>Figma</span></div></div>
+        <div class="group"><h3>Interests</h3><div class="chips reveal"><span>Painting</span><span>Photography</span><span>Reading art history</span><span>Mountaineering</span><span>Rock climbing</span></div></div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="reveal">Contact</h2>
+  <div class="contact-line reveal"><span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.8 8 8.2 5.8L20.2 8"/></svg></span><a class="mail" href="mailto:navidsaeedb@gmail.com">navidsaeedb@gmail.com</a></div>
+  <div class="contact-line reveal" style="--d:120ms"><span class="ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><a class="phone" href="tel:+989351511603" dir="ltr">+98 935 151 1603</a></div>
+  <aside class="bye reveal" aria-label="Thank you">
+    <span class="bye-wave" aria-hidden="true">&#128075;</span>
+    <h3>Thanks for stopping by</h3>
+    <p>I hope you enjoyed the work. Have a great day, and see you soon.</p>
+    <a class="btn" href="mailto:navidsaeedb@gmail.com">Say hello</a>
+  </aside>
+</section>
+
+<dialog id="sanmarco-view" class="case" aria-label="SanMarco Italian gelato — case study">
+<div class="case-bar"><div class="case-title"><b>SanMarco Italian gelato</b><span>Case study · 2025</span></div><span class="case-count" aria-hidden="true">1 / 17</span><button type="button" class="case-close" autofocus>Close ✕</button><i class="case-progress" aria-hidden="true"></i></div>
+<div class="case-scroll" tabindex="0">
+<figure><img data-src="assets/projects/sanmarco/pages/01.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 1 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/02.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 2 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/03.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 3 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/04.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 4 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/05.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 5 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/06.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 6 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/07.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 7 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/08.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 8 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/09.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 9 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/10.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 10 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/11.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 11 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/12.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 12 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/13.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 13 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/14.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 14 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/15.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 15 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/16.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 16 of 17"></figure>
+<figure><img data-src="assets/projects/sanmarco/pages/17.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="SanMarco case study, page 17 of 17"></figure>
+</div></dialog>
+
+<dialog id="yal-cafe-view" class="case" aria-label="Yal Café case study">
+<div class="case-bar"><div class="case-title"><b>Yal Café</b><span>Visual identity design · 2024</span></div><span class="case-count" aria-hidden="true">1 / 12</span><button type="button" class="case-close" autofocus>Close ✕</button><i class="case-progress" aria-hidden="true"></i></div>
+<div class="case-scroll" tabindex="0">
+<figure><img data-src="assets/projects/yal-cafe/pages/01.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 1 of 12. Yal Café logo on the case study cover"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/02.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 2 of 12. Brand overview and audience for the café and bakery"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/03.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 3 of 12. Logo concept and construction inspired by a horseshoe and flowing mane"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/04.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 4 of 12. Logo and wordmark variations"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/05.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 5 of 12. Café imagery and branded takeaway cup"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/06.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 6 of 12. Brand colour palette"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/07.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 7 of 12. Dana and Vazir type specimens"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/08.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 8 of 12. Brand pattern and its construction"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/09.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 9 of 12. Branded takeaway bags"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/10.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 10 of 12. Paper bag and sticker applications"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/11.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 11 of 12. Takeaway cups and carrier packaging"></figure>
+<figure><img data-src="assets/projects/yal-cafe/pages/12.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="Page 12 of 12. Closing image and project credits"></figure>
+</div></dialog>
+
+
+<dialog id="stancer-view" class="case" aria-label="Stancer Testing Lab case study">
+  <div class="case-bar">
+    <div class="case-title"><b>Stancer Testing Lab</b><span>Brand identity · 2025</span></div>
+    <span class="case-count" aria-hidden="true">1 / 15</span>
+    <button type="button" class="case-close" autofocus>Close ✕</button>
+    <i class="case-progress" aria-hidden="true"></i>
+  </div>
+  <div class="case-scroll" tabindex="0">
+  <figure><a href="assets/projects/stancer/pages/01.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 1 in a new tab"><img data-src="assets/projects/stancer/pages/01.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 1 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/02.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 2 in a new tab"><img data-src="assets/projects/stancer/pages/02.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 2 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/03.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 3 in a new tab"><img data-src="assets/projects/stancer/pages/03.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 3 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/04.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 4 in a new tab"><img data-src="assets/projects/stancer/pages/04.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 4 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/05.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 5 in a new tab"><img data-src="assets/projects/stancer/pages/05.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 5 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/06.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 6 in a new tab"><img data-src="assets/projects/stancer/pages/06.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 6 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/07.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 7 in a new tab"><img data-src="assets/projects/stancer/pages/07.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 7 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/08.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 8 in a new tab"><img data-src="assets/projects/stancer/pages/08.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 8 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/09.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 9 in a new tab"><img data-src="assets/projects/stancer/pages/09.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 9 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/10.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 10 in a new tab"><img data-src="assets/projects/stancer/pages/10.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 10 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/11.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 11 in a new tab"><img data-src="assets/projects/stancer/pages/11.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 11 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/12.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 12 in a new tab"><img data-src="assets/projects/stancer/pages/12.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 12 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/13.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 13 in a new tab"><img data-src="assets/projects/stancer/pages/13.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 13 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/14.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 14 in a new tab"><img data-src="assets/projects/stancer/pages/14.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 14 of 15"></a></figure>
+  <figure><a href="assets/projects/stancer/pages/15.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution Stancer page 15 in a new tab"><img data-src="assets/projects/stancer/pages/15.jpg" width="3000" height="1688" loading="lazy" decoding="async" alt="Stancer Testing Lab case study, page 15 of 15"></a></figure>
+  </div>
+</dialog>
+
+<footer><span>2026</span><a href="#top">Back to top</a></footer>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
